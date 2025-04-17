@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Pistilli';
+    src: url(./fonts/Pistilli.woff2)format('woff2');
+}
+#jouy{
+    font-family:'Pistilli';
+    font-size: 150px;
+    color: rgb(41, 30, 255);
+}
+body{
+    font-family: 'futura';
+    font-size: 25px;
+}
+.link-color{
+color: rgb(0, 0, 0);
+}
+body{
+    background-color: rgb(254, 247, 237);
+}

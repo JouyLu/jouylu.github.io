@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'snake';
+    src: url("snake.woff2")format("woff2");
+}
+#title{
+    font-family: 'snake';
+    font-size: 200px;
+    font-weight: 100;
+    transform: scaleY(1.5);
+    color:  rgb(245, 131, 224);
+}
+#subtitle{
+    font-family: 'snake';
+    font-size: 100px;
+    font-weight: 100;
+    color:cornflowerblue;
+}
+body{
+    font-family: futura;
+    font-size: 15px;
+    background-color: rgb(2, 21, 97);
+    color: cornflowerblue;
+}
