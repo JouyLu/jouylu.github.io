@@ -2,22 +2,49 @@
     font-family: 'snake';
     src: url("snake.woff2")format("woff2");
 }
-#title{
+.container {
+    max-width:100%;
+    overflow:hidden;
+    text-align: center; 
+    margin-top: 5px;
+    padding:0 20px;
+  }
+  
+.title{
+    display:inline-block;
+    letter-spacing:10px;
     font-family: 'snake';
-    font-size: 200px;
+    font-size: 450px;
     font-weight: 100;
     transform: scaleY(1.5);
-    color:  rgb(245, 131, 224);
+    color:  #20C997;
+    transition:all 0.3s ease;
+    margin-top: 0;
 }
-#subtitle{
+.subtitle{
+    margin-bottom: 250px;
+    margin-top:50px;
     font-family: 'snake';
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 100;
-    color:cornflowerblue;
+    color:#333333;
 }
 body{
-    font-family: futura;
-    font-size: 15px;
-    background-color: rgb(2, 21, 97);
-    color: cornflowerblue;
+    background-color: #FFF8E7;
 }
+
+.title span {
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: #20C997;
+  }
+  
+  .title:has(span:hover) span {
+    color: #aaa;
+    transform: scale(0.3);   
+  }
+  
+  .title span:hover {
+    color: #FF6F61 !important;
+    transform: scale(1.5) !important;
+  }
