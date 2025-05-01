@@ -6,13 +6,36 @@
     <title>ophis serif microsite</title>
     <link rel="stylesheet" href="mystyles.css">
 </head>
+</head>
 <body>
-    <div class="container">
-    <p class="subtitle">The snake inside... is waking up!</p>
-    <h1 class="title">
-        <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
-    </h1>
-    </div>
 
-</body>
+    <div class="title-container">
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+      <div class="title-line"><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span><span>SLITHER </span></div>
+    </div>
+  
+    <script>
+        const lines = document.querySelectorAll('.title-line');
+    
+        document.addEventListener('mousemove', (e) => {
+          const xRatio = (e.clientX / window.innerWidth - 1.5) * 2;
+          const maxOffset =300;
+          const speedFactor = 0.01; 
+          lines.forEach((line, index) => {
+          const direction = index % 2 === 0 ? 1 : -1;
+          const offset = direction * xRatio * (100 - Math.abs(index - 5) * 15);
+          line.style.transform = `rotate(-30deg) translateX(${offset}px)`;
+          });
+        });
+      </script>
+  </body>
+
 </html>
